@@ -1,0 +1,150 @@
+{
+  "info": {
+    "_postman_id": "513dc80c-5486-4d1b-affc-c180ff57dd32",
+    "name": "Happy Path",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52588315",
+    "_collection_link": "https://go.postman.co/collection/52588315-513dc80c-5486-4d1b-affc-c180ff57dd32?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "List_deals",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/{{resource}}?pageSize=6",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "{{resource}}"
+          ],
+          "query": [
+            {
+              "key": "pageSize",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Detail_ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/{{resource}}?id={{id}}",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "{{resource}}"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{id}}",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Title_search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/{{resource}}?title={{query}}",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "{{resource}}"
+          ],
+          "query": [
+            {
+              "key": "title",
+              "value": "{{query}}",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Advanced_filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/{{resource}}?upperPrice=15",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "{{resource}}"
+          ],
+          "query": [
+            {
+              "key": "upperPrice",
+              "value": "15",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Pages",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/{{resource}}?pageNumber=1&pageSize=15",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "{{resource}}"
+          ],
+          "query": [
+            {
+              "key": "pageNumber",
+              "value": "1"
+            },
+            {
+              "key": "pageSize",
+              "value": "15"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "OtherSource",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/stores",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "stores"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
